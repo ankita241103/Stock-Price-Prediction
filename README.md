@@ -14,25 +14,25 @@ The dataset consists of stock price data with the following columns:
 
 ## Project Structure
 
-1. Data Loading and Preprocessing
+### 1. Data Loading and Preprocessing
 - Data is loaded from a CSV file and preprocessed to extract relevant features and time series attributes.
 - The dataset comprises columns such as Date, Open, Close, Volume, and additional exogenous variables.
 
-2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 - Time series plots for stock prices (Open, Close) and trading volume are generated to understand trends and seasonal behaviors.
 - Statistical summaries and distributions of numerical columns are analyzed.
 - Correlation heatmaps are used to identify relationships between features.
 
-3. Feature Engineering
+### 3. Feature Engineering
 - Lagged features and moving averages are created to enhance the model's ability to capture temporal dependencies.
 - The dataset is augmented with lagged values and moving averages for Open and Volume to improve predictive performance.
 
-4. Model Building and Training
+### 4. Model Building and Training
 - The ARIMA model is implemented to forecast stock prices based on historical data.
 - The auto_arima function from the pmdarima library is used to optimize model parameters, including p, d, and q.
 - Exogenous variables, including lagged values and moving averages, are integrated into the model to capture additional predictors.
 
-5. Prediction and Evaluation
+### 5. Prediction and Evaluation
 - Model predictions are compared against actual values using performance metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE).
 - A summary of the ARIMA model is provided, including parameter estimates and diagnostics.
 - Results are visualized with plots comparing predicted and actual stock prices.
